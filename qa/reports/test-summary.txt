@@ -1,0 +1,21 @@
+
+📈 OVERALL RESULTS
+─────────────────────────────────
+Total Tests: 3
+Passed: 3 ✓
+Failed: 0 ✗
+Pass Rate: 100.0%
+Duration: 15.2s
+
+🏷️  BY TAG
+─────────────────────────────────
+@smoke: 3/3 passed (100%)
+@auth: 2/2 passed (100%)
+@critical: 1/1 passed (100%)
+@tasks: 1/1 passed (100%)
+@regression: 1/1 passed (100%)
+
+📂 BY FEATURE
+─────────────────────────────────
+ui-auth: 2/2 passed (100%)
+ui-tasks: 1/1 passed (100%)

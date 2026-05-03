@@ -1,0 +1,33 @@
+{
+  "name": "qa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --project='ui tests*'",
+    "test:api": "playwright test --project='api tests'",
+    "test:integration": "playwright test --project='integration tests'",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "test:organized": "playwright test tests/ui/auth tests/ui/tasks tests/api/auth tests/integration/tasks --timeout=120000",
+    "test:auth": "playwright test tests/ui/auth tests/api/auth --timeout=120000",
+    "test:tasks": "playwright test tests/ui/tasks tests/integration/tasks --timeout=120000",
+    "test:smoke": "playwright test tests/ui/auth tests/ui/tasks tests/api/auth tests/integration/tasks --timeout=120000 --grep @smoke",
+    "test:critical": "playwright test tests/ui/auth tests/ui/tasks tests/api/auth tests/integration/tasks --timeout=120000 --grep @critical",
+    "test:regression": "playwright test tests/ui/auth tests/ui/tasks tests/api/auth tests/integration/tasks --timeout=120000 --grep @regression",
+    "test:slow": "playwright test tests/ui/auth tests/ui/tasks tests/api/auth tests/integration/tasks --timeout=120000 --grep @slow",
+    "report:view": "node -e \"console.log(require('fs').readFileSync('reports/test-summary.txt', 'utf8'))\"",
+    "report:json": "node -e \"console.log(JSON.stringify(JSON.parse(require('fs').readFileSync('reports/test-report.json', 'utf8')), null, 2))\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@faker-js/faker": "^10.4.0",
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "jwt-decode": "^4.0.0"
+  }
+}

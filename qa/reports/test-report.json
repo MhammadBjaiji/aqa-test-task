@@ -1,0 +1,75 @@
+{
+  "timestamp": "2026-05-03T19:52:18.629Z",
+  "summary": {
+    "total": 3,
+    "passed": 3,
+    "failed": 0,
+    "passRate": "100.0%",
+    "duration": 15177
+  },
+  "byTag": {
+    "@smoke": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "tests": [
+        "@smoke @auth @critical should login with valid credentials",
+        "@smoke @auth should reject invalid email format",
+        "@smoke @tasks @regression should edit task description successfully"
+      ]
+    },
+    "@auth": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "tests": [
+        "@smoke @auth @critical should login with valid credentials",
+        "@smoke @auth should reject invalid email format"
+      ]
+    },
+    "@critical": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "tests": [
+        "@smoke @auth @critical should login with valid credentials"
+      ]
+    },
+    "@tasks": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "tests": [
+        "@smoke @tasks @regression should edit task description successfully"
+      ]
+    },
+    "@regression": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "tests": [
+        "@smoke @tasks @regression should edit task description successfully"
+      ]
+    }
+  },
+  "byFeature": {
+    "ui-auth": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "tests": [
+        "@smoke @auth @critical should login with valid credentials",
+        "@smoke @auth should reject invalid email format"
+      ]
+    },
+    "ui-tasks": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "tests": [
+        "@smoke @tasks @regression should edit task description successfully"
+      ]
+    }
+  },
+  "failedTests": []
+}
